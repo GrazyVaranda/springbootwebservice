@@ -1,3 +1,5 @@
+package br.com.example;
+import java.time.LocalDateTime;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -11,27 +13,27 @@ public class LocalizacaoService {
         return "São Miguel Paulista";
     }
 
-    @GetMapping("/obtemlocal")
-    public String obtemHoraAtual() {
+    @GetMapping("/obtemhora")
+    public String obtemhora() {
         return LocalDateTime.now().toString();
     
     
    }
-    @GetMapping("/obtelocal")
+    @GetMapping("/obtemcoordenadas")
     public String obtemCoordenadas() {
         
-        return "Latitude: xx.xxxx, Longitude: yy.yyyy";
+        return "Latitude: A, Longitude: B";
     }
 
-    @GetMapping("/obtemlocal")
-    public String obtemEndereco() {
+    @GetMapping("/obtemendereco")
+    public String obtemendereco() {
         
         return "Endereço: Rua abc , Cidade São Paulo, Estado São Paulo";
     }
 
-    @GetMapping("/obtemlocal")
-    public String obtemPais() {
+    @GetMapping("/obtempais")
+    public String obtempais() {
        
-        return "País: Brasil, Capital: São Paulo, População: xxx milhões";
+        return "País: Brasil, Capital: São Paulo, População: 215,3 milhões";
     }
 }
