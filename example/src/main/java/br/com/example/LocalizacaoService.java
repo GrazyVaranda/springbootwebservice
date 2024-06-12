@@ -28,12 +28,12 @@ public class LocalizacaoService {
     @GetMapping("/obtemendereco")
     public String obtemendereco() {
         
-        return "Endereço: Rua abc , Cidade São Paulo, Estado São Paulo";
+        return "Endereço: Rua abc n° xxx, Cidade São Paulo, Estado São Paulo";
     }
 
     @GetMapping("/obtempais")
     public String obtempais() {
        
-        return "País: Brasil, Capital: São Paulo, População: 215,3 milhões";
+        return "País: Brasil, População: 215,3 milhões";
     }
 }
